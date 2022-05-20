@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Intro to React</title>
+
+  </head>
+  <body>
+
+    <div id="react-container"></div>
+    <!-- As a user, I see a Header component with the name of your cohort
+    As a user, I can see a Content component that contains a list of all your classmates
+    As a user, I can see a Footer component with your name -->
+    <script type="text/babel">
+    class App extends React.Component{
+        render(){
+            return(
+            <>
+            <HelloCharlie/>
+            </>
+            )
+        }
+    }
+
+    class HelloCharlie extends React.Component{
+        render(){
+            return(
+            <>
+            <h1>Hello Charlie 2022!</h1>
+            <Content />
+            <Footer />
+            </>
+            )
+        }
+    }
+
+    class Content extends React.Component{
+        render(){
+            const charlieNames = "Stephen James Davon Collin Michael Jorge Frank Damien Mary JB Irving Sean Ivan Don Logan Geovanna Jenner Valerie Denise Nic Lance Charlean Austin Sarah"
+            return(
+            <ul>
+                {charlieNames.split(" ").map((names) => (<li>{names}</li>))}
+            </ul>
+            )
+        }
+    }
+
+    class Footer extends React.Component {
+        render() {
+            return(
+            <>
+            <footer> 
+            <p>Don</p>
+            </footer>
+            </>
+            )
+        }
+    }
+      const domContainer = document.querySelector('#react-container');
+      ReactDOM.render(<App />, domContainer);
+    </script>
+  </body>
+</html>
