@@ -1,0 +1,8 @@
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 100px;
+  cursor: pointer
+}
