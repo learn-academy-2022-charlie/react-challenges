@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import Header from "./components/Header"
 import Profile from "./components/Profile"
 import Footer from './components/Footer'
-import List from "./components/List"
+import Favorite from "./components/Favorite"
 
 class App extends Component {
   render () {
@@ -10,7 +10,7 @@ class App extends Component {
       <>
         <Header /> 
         <Profile />
-        <List />
+        <Favorite />
         <Footer />
       </>
     )
