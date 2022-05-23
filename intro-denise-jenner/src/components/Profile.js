@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import Favorite from './Favorite'
 
 
 class Profile extends Component {
@@ -11,11 +12,13 @@ class Profile extends Component {
                 New React Developer making first application. Lives in Houston, TX
                 Enjoys walking and hiking.
             </p>
+            <Favorite />
             <h3>Jenner Dulce</h3>
             <p>
             New React Developer making first application. Lives in San Diego, CA
                 Enjoys video games and surfing.
             </p>
+            <Favorite />
             </>
         )
     }
