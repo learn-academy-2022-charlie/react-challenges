@@ -1,4 +1,8 @@
-import React, { Component, Profiler } from 'react'
+import React, { Component } from 'react'
+import Header from './Component/Header'
+import Profile from './Component/Profile'
+import Footer from './Component/Footer'
+import Favorite from './Component/Favorite'
 
 class App extends Component {
   render(){
@@ -7,7 +11,7 @@ class App extends Component {
       <Header/>
       <Profile/>
       <Footer/>
-      <Favorites/>
+      <Favorite/>
       </>
     )
   }
