@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Header from './components/Header'
 import Profile from './components/Profile'
-// import Recipes from './components/Recipes'
+import Favorites from './components/Favorites'
 import Footer from './components/Footer'
 
 class App extends Component{
@@ -10,6 +10,7 @@ class App extends Component{
       <>
         <Header />
         <Profile/>
+        <Favorites/>
         <Footer/>
       </>
     )
