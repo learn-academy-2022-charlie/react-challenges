@@ -1,0 +1,10 @@
+#whitebox {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+body {
+  background-color: black;
+}
