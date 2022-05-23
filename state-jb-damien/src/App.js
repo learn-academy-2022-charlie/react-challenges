@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <>
         <div id="box" style={{border: '2px solid black',width: '300px', height: '300px',backgroundColor: {color}}}>
-
+        < span id="colorLabel" > {color} </span>
         </div>
       </>
     )
