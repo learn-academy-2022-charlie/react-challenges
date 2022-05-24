@@ -1,0 +1,32 @@
+body{
+  background-color: #000000;
+  
+}
+#root{
+  height: 600px;
+}
+button{
+  display: inline-block;
+  width: 35%;
+  height: 35%;
+  aspect-ratio: 1/1;
+  
+  margin: 25%;
+  padding: 50px;
+  
+  
+}
+h1{
+  color: #8ab2e2;
+
+
+}
+.Roller{
+  display: block;
+  border: 3px solid #ffffff;
+  width:50%;
+  text-align: center;
+  height: 95%;
+  margin: 10px;
+ background-color: #262729;
+}
