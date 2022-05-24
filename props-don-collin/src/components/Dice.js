@@ -11,6 +11,7 @@ export default class Dice extends Component {
 
     return (
       <>
+
       <h1>DICE</h1>
       <button style = {diceStyle} onClick={this.props.toss}>
           {this.props.roll}
