@@ -18,12 +18,15 @@ class Box extends Component {
             }
         this.setState({color: newColor})
     }
+
+
     render () {
         return(
         <> 
-        <button onClick={this.changeColor} className="Box" style={{height: "100px", width: "100px", margin:"50px", border: "2px solid black", backgroundColor: this.state.color}}> 
+        <button onClick={this.changeColor} id="Box" style={{height: "100px", width: "100px", margin:"50px", border: "2px solid black", display:"block",backgroundColor: this.state.color}}> 
         {this.state.color}
         </button>
+
         </>
     )
 }
