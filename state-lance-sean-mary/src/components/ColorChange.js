@@ -11,7 +11,7 @@ class ColorChange extends Component {
     }
 
     changeColor = () => {
-        let colorArray = ["white", "green", "blue", "yellow", "red", "purple", "orange"]
+        let colorArray = ["green", "blue", "yellow", "red", "purple", "orange"]
         this.setState({colorIndex: this.state.colorIndex +1})
             if(this.state.colorIndex > colorArray.length){
                 this.setState({colorIndex: 0})
@@ -26,14 +26,15 @@ class ColorChange extends Component {
 
         return(
             <>
-            <div 
+            <button onClick = {this.changeColor} className = "square"
+             style={{height: "100px", width:"100px", margin: "50px", border: "2px solid black", backgroundColor: this.state.color}}>
               
-            >
-                <p>White</p>
+            
+             {this.state.color}
 
 
 
-            </div>
+            </button>
             </>
         )
 
