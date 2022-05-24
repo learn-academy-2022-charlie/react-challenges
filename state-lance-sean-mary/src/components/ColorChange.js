@@ -3,16 +3,21 @@ import React, { Component } from 'react'
 class ColorChange extends Component {
     constructor(props){
         super(props)
-        const colorArray = ["white", "green", "blue", "yellow", "red", "purple", "orange"]
+
         this.state = {
-            backgroundColor: {},
-            colorName: "White",
-            count: colorArray[0]
+            colorIndex: 0,
+            color: "white"
         }
     }
 
     changeColor = () => {
-        this.setState({backgroundColor: this.state.backgroundColor})
+        let colorArray = ["white", "green", "blue", "yellow", "red", "purple", "orange"]
+        this.setState({colorIndex: this.state.colorIndex +1})
+            if(this.state.colorIndex > colorArray.length){
+                this.setState({colorIndex: 0})
+            }
+            let newColor = colorArray[this.state.colorIndex]
+            this.setState({color: newColor})
         
     }
 
