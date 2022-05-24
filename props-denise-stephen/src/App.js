@@ -5,24 +5,31 @@ import "./App.css"
 
 export default class App extends Component {
   constructor( props){
-    super(props) 
+    super(props)
     this.state = {
-      number: 0,
+      numberDice: [1,2,3,4,5,6],
+      visRoll: 1
     }
+  }
+  handleClick = () =>{
+    let ranNum = Math.floor(Math.random()*this.state.numberDice.length+1)
+    this.setState({visRoll: ranNum})
+    console.log(ranNum);
   }
   render() {
     return (
       <>
       <div id = "diceroll">
        <Diceroller
-       numberolls = {this.state.number}/>
+       numberolls = {this.state.visRoll}
+       clickMethod = {this.handleClick}/>
       </div>
       <div id = "trackdice">
-      <Tracker 
-       numberolls = {this.state.number}/>
+      <Tracker
+       numberolls = {this.state.visRoll}/>
        </div>
       </>
-     
+
     )
   }
 }
