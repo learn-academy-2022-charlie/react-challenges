@@ -1,14 +1,14 @@
 
 import './App.css';
 import React, { Component } from 'react';
-import Square from './components/Square'
+import Button from './components/Button';
 
 class App extends Component {
   render() {
     return(
       <>
-        <Square />
-        <Square />
+        <Button />
+        
       </>
     )
   }
