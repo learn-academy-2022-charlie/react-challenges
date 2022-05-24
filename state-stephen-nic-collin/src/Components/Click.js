@@ -5,35 +5,36 @@ class Click extends Component{
 constructor(props){
     super(props)
     this.state = {
-        colorArr: ['green', 'blue', 'yellow', 'red', 'purple', 'orange']
-    }
+        colorArr: ['white', 'green', 'blue', 'yellow', 'red', 'purple', 'orange'],
+        colorIndex: 0,
+        color: "white",
+      }
 }
-
-
 
 handleChange = () => {
-    let newText = (colorArr) => {
-
-        for(let i=0; i < colorArr.length; i++){
-            return colorArr[i]
-        }
-        
-    
-    this.setState({colorArr: newText})
-}
-}
+  let {colorIndex, colorArr} = this.state;
+   this.setState({colorIndex: colorIndex + 1})
+   if (colorIndex >= colorArr.length - 1){
+     this.setState({colorIndex: 0})
+   }
+   let newColor = colorArr[colorIndex] 
+   this.setState({color: newColor})
+  }
 
 
   render(){
-    let {colorArr} = this.state
+    let {color} = this.state;
     
     return(
-      <div id= 'whitebox' onClick = {this.handleChange} >
-          <h1>{colorArr}</h1>
+      <>
+      <div id= 'whitebox' onClick = {this.handleChange} style = {{backgroundColor: color}}>
+          <h1>{color}</h1>
       </div>
+      </>
     )
   }
 }
+
 
 
 export default Click
