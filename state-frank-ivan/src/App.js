@@ -1,13 +1,11 @@
 import React, { Component } from 'react'
-import Box from './Components/Box'
+import Box from './Component/Box'
 
 
 class App extends Component{
-  render(){
-    return(
-      <>
-        <Box />
-      </>
+  render() {
+    return (
+        <Box/>
     )
   }
 }
