@@ -4,18 +4,14 @@ class Rolls extends Component {
     render() {
         return(
             <>  
-                <h2>Rolls</h2>
+                <h2>Roll Log</h2>
                 <ol>
-                    <li>{`${this.props.loggedItem}`}</li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>{this.props.loggedItem[0]}</li>
+                    <li>{this.props.loggedItem[1]}</li>
+                    <li>{this.props.loggedItem[2]}</li>
+                    <li>{this.props.loggedItem[3]}</li>
+                    <li>{this.props.loggedItem[4]}</li>
                 </ol>
-                {/* Log rolls */}
-                {/* Create an empty array called rollLog */}
-                {/* Push the outcome into the array */}
-                {/* Display the array in a ordered list */}
             </>
         )
     }

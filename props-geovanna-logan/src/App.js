@@ -7,21 +7,15 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      outcome: 0,
+      outcome: 1,
       rollLog: []
     }
   }
   rollDice = () => {
     let randomNum = Math.floor(Math.random() * 6 + 1)
+    let updateLog = this.state.rollLog.concat(randomNum)
+    this.setState({rollLog: updateLog})
     this.setState({outcome: randomNum})
-    this.inputRollLog()
-  }
-  inputRollLog = () => {
-    let updatedRollLog = this.state.rollLog.map(value => {
-      return value.push(this.state.outcome)
-    })
-    console.log(updatedRollLog)
-    this.setState({rollLog: updatedRollLog})
   }
 
   render() {

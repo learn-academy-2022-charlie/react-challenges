@@ -5,6 +5,8 @@
 body {
   background-color: rgb(49, 49, 49);
   color: white;
+  justify-content: center;
+  display: flex;
 }
 
 #dice {
@@ -15,4 +17,6 @@ body {
   align-items: center;
   display: flex;
   font-size: 90px;
+  cursor: pointer;
+  user-select: none;
 }
