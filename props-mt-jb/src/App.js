@@ -20,7 +20,7 @@ class App extends Component {
     
   render() {
     return (
-      <>
+       <>
       <h1> Welcome to Dice Roller</h1>
       <button 
       style={
@@ -30,16 +30,11 @@ class App extends Component {
         
         {`Current number is ${this.state.roll}`}
     
-      </button>
-      <p>{`${this.state.rollLog}`}</p>
-      
-      {/* <button
-      onClick={this.setState({rollLog: []})}>
-      <p>Clear roll log</p>
-      </button> */}
-      {/* This button is broken in such a way that when enabled, it causes the page to go in an infinite button click. Check the browser console as you debug*/}
+      </button>    
       </>
-    )
+      
+      
+          )
   }
 }
 
