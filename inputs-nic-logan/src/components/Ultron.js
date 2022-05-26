@@ -9,14 +9,19 @@ class Ultron extends Component {
     }
     notListening = () => {
         let userInput = this.props.updatedState
-        if (typeof userInput === "string")
+        let bla = ["b", "l", "a"]
+        // bla.map(input => {
+        //     return input.replace(/[a-z]/, "bla")
+        // }) 
+
+        this.setState(userInput.replace(/[a-z]/, "test"))
         
     }
     render() {
         return(
             <>
             <h3>Ultron</h3>
-            <p>{this.props.updatedState}</p>
+            <p>{this.state.notListening}</p>
             </>
         )
     }
