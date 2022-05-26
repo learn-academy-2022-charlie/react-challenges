@@ -22,3 +22,15 @@ h3 {
   background-image: linear-gradient(to right, red, maroon, violet);
   
 }
+
+#crazy:hover{
+ visibility: hidden;
+}
+
+#stup:hover{
+  color: yellow;
+}
+
+#nice:hover{
+  color: aquamarine;
+}

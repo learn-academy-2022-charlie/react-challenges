@@ -34,17 +34,17 @@ export default class App extends Component {
 
         
             <div>
-              <h3>Good Robot</h3>
+              <h3 id="nice">Good Robot</h3>
               <GoodRobot userText={this.state.userInput}/>
             </div>
 
             <div>
-              <h3>Bad Robot</h3>
+              <h3 id="stup">Bad Robot</h3>
               <BadRobot userText={this.state.userInput}/>
             </div>
 
             <div>
-              <h3>Kanyebot BrokeBot</h3>
+              <h3 id="crazy">Kanyebot BrokeBot</h3>
               <KanyeBot userText={this.state.userInput}/>
             </div>
 
