@@ -12,6 +12,7 @@ class Button extends Component{
 
   changeColor = () => {
     this.setState ({colorName: this.state.colorArray[Math.floor(Math.random() * 6)]})
+    //                         |--------array-------||------------index-----------|
   }
   render() {
     const buttonStyle = {
