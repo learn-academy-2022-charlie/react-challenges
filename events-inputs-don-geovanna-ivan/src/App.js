@@ -1,0 +1,57 @@
+import React, { Component } from 'react'
+import GoodRobot from './components/GoodRobot'
+import BadRobot from './components/BadRobot'
+import KanyeBot from './components/KanyeBot'
+import './App.css'
+
+export default class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      userInput: ""
+
+
+    }
+  }
+  handleChange = (e) => {
+
+    this.setState({userInput: e.target.value})
+  }
+  render() {
+    return (
+      <>
+      <div className = "container">
+        <h1>ROBO ACTIVE LISTENING</h1>
+        
+        <input 
+          className = "input"
+          type="text"
+          // value={this.state.userInput}
+          onChange={this.handleChange}
+        />
+
+        <div className="bots">
+
+        
+            <div>
+              <h3>Good Robot</h3>
+              <GoodRobot userText={this.state.userInput}/>
+            </div>
+
+            <div>
+              <h3>Bad Robot</h3>
+              <BadRobot userText={this.state.userInput}/>
+            </div>
+
+            <div>
+              <h3>Kanyebot BrokeBot</h3>
+              <KanyeBot userText={this.state.userInput}/>
+            </div>
+
+        </div>
+
+      </div>
+      </>
+    )
+  }
+}

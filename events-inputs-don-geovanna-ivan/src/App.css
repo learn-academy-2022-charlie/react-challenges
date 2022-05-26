@@ -1,0 +1,24 @@
+.container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background: black;
+  color: white;
+   
+}
+
+.bots > div {
+  padding: 2rem;
+}
+
+.input {
+  width: 20rem;
+  height: 4rem;
+  
+}
+
+h3 {
+  font-variant: small-caps;
+  background-image: linear-gradient(to right, red, maroon, violet);
+  
+}
