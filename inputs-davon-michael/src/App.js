@@ -4,19 +4,28 @@ class App extends Component{
   constructor(props){
     super(props)
    this.state={
-     name:""
+     name:"nothing right now",
+     badRobot: ""
    }
   }
  handleChange = (e)=>{
   this.setState({name: e.target.value})
+  console.log("This is e: ", e)
+  console.log("This is e.target: ", e.target)
+  console.log("This is e.target.value: ", e.target.value)
+  
 }
 
-
+// We want to take user input, find the length, and return a string of equal length.
+  // We want the string to say "BLABLABLA" to match the length of the user input string. 
+  // To find the length, we need this.state.name.length and it will give us a number
+    // We want this.state.badRobot to say "BLABLABLA" at the same length as this.state.name.length
 
 
 
 
   render(){
+    console.log("The length of this.state.name: ",this.state.name.length)
     return(
       <>
         <h1>Robo Active Listening</h1>
@@ -24,9 +33,13 @@ class App extends Component{
         type="text"
         onChange={this.handleChange}
         />  
-        {console.log(e)}
-        {console.log(e.target)}
-        {console.log(e.target.value)}
+        <h2>Good Robot:</h2>
+        <p>I hear you saying {this.state.name}. Is that correct?</p>
+        <h2>Bad Robot:</h2>
+        <p>I hear you saying {this.state.badRobot}. Is that correct?</p>
+          
+        <h2>Kanyebot 5001:</h2>
+        <p>I'm gonna let you finish, but Beyonce is {this.state.name} of ALL TIME</p>
       </>
     )
   }
