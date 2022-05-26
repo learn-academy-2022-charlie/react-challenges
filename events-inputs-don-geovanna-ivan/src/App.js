@@ -49,7 +49,7 @@ export default class App extends Component {
             </div>
 
         </div>
-
+<footer> Coded by Don| Ivan| <a href="https://github.com/Geovannapg12"> Geovanna </a> </footer>
       </div>
       </>
     )

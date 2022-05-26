@@ -2,7 +2,7 @@
   display: block;
   text-align: center;
   margin: 0 auto;
-  background: black;
+  background: #734c3d;
   color: white;
    
 }
@@ -19,7 +19,7 @@
 
 h3 {
   font-variant: small-caps;
-  background-image: linear-gradient(to right, red, maroon, violet);
+  background-image: linear-gradient(to right,  #734c3d, maroon, #4d3534);
   
 }
 
@@ -33,4 +33,8 @@ h3 {
 
 #nice:hover{
   color: aquamarine;
+}
+
+footer:hover{
+  color: black;
 }
