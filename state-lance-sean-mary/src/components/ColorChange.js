@@ -3,16 +3,21 @@ import React, { Component } from 'react'
 class ColorChange extends Component {
     constructor(props){
         super(props)
-        const colorArray = ["white", "green", "blue", "yellow", "red", "purple", "orange"]
+
         this.state = {
-            backgroundColor: {},
-            colorName: "White",
-            count: colorArray[0]
+            colorIndex: 0,
+            color: "white"
         }
     }
 
     changeColor = () => {
-        this.setState({backgroundColor: this.state.backgroundColor})
+        let colorArray = ["green", "blue", "yellow", "red", "purple", "orange"]
+        this.setState({colorIndex: this.state.colorIndex +1})
+            if(this.state.colorIndex > colorArray.length){
+                this.setState({colorIndex: 0})
+            }
+            let newColor = colorArray[this.state.colorIndex]
+            this.setState({color: newColor})
         
     }
 
@@ -21,14 +26,15 @@ class ColorChange extends Component {
 
         return(
             <>
-            <div 
+            <button onClick = {this.changeColor} className = "square"
+             style={{height: "100px", width:"100px", margin: "50px", border: "2px solid black", backgroundColor: this.state.color}}>
               
-            >
-                <p>White</p>
+            
+             {this.state.color}
 
 
 
-            </div>
+            </button>
             </>
         )
 
