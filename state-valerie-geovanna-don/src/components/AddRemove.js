@@ -16,6 +16,7 @@ class AddRemove extends Component {
     addButton = () => {
         this.setState({buttonCounter: this.state.buttonCounter + 1})
         this.state.buttonArray.push(<tr><Button/></tr>)
+    //  |--------array--------|
     }
     removeButton = () => {
         if (this.state.buttonCounter > 1){

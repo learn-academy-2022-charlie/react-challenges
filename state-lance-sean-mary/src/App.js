@@ -6,6 +6,8 @@ function App() {
   return (
     <div id="square" onclick="changeColor()">
       <ColorChange/>
+      <ColorChange/>
+      <ColorChange/>
     </div>
   );
 }
