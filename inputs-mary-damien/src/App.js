@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import BadRobot from "./components/BadRobot"
 import GoodRobot from "./components/GoodRobot"
 
 class App extends Component {
@@ -23,6 +24,7 @@ this.setState({something: e.target.value})
       type="text"
       />
       <GoodRobot goodText = {this.state.something} />
+      <BadRobot badText = {this.state.something}/>
       </>
     )
   }
