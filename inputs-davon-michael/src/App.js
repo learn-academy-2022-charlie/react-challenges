@@ -13,14 +13,19 @@ class App extends Component{
   console.log("This is e: ", e)
   console.log("This is e.target: ", e.target)
   console.log("This is e.target.value: ", e.target.value)
-  
-}
+  //this.setState({badRobot:
+    //if(this.state.name.length %3 === 0){
+      let badString = "BLA"
+      badString.repeat(this.state.name.length / 3)
+   // }
+ // })
+//}
 
 // We want to take user input, find the length, and return a string of equal length.
   // We want the string to say "BLABLABLA" to match the length of the user input string. 
   // To find the length, we need this.state.name.length and it will give us a number
     // We want this.state.badRobot to say "BLABLABLA" at the same length as this.state.name.length
-
+  // How do we get "BLABLABLA" into BadRobot 
 
 
 
