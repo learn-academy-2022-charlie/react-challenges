@@ -7,6 +7,7 @@ class App extends Component{
     this.state={
       foodArr: ["Ribs", "Pizza", "Tacos", "Chicken"],
       price: [15.99, 9.99, 6.99, 11.99],
+      currentOrder: []
      //  menu: [
      //    {food: "Ribs", price:15.99},
      //    {food: "Pizza", price:9.99},
@@ -19,16 +20,27 @@ class App extends Component{
       }
 
     }
-
+      takeOrder=(item)=>{
+        this.setState({currentOrder: [...this.state.currentOrder, item]})
+      }
   render(){
-    console.log(this.state.menu);
+      console.log(this.state.currentOrder)
     return(
       <>
         <h1>Welcome to foodHub</h1>
         <h2>Menu</h2>
+        
         <Plate
-        menu={this.state.foodArr}/>
+        menu={this.state.foodArr} 
+        price={this.state.price}
+        order={this.takeOrder}/>
 
+        <h2>currentOrder</h2>
+        <ul>
+        {this.state.currentOrder.map(value => {
+          return <li>{value}</li>
+        })}
+        </ul>
       </>
     )
   }
@@ -48,6 +60,7 @@ export default App
 //oncce and item is selected we add it to a new list displaying what was selected
 // Stretch Challenges
 // As a user, I can see the total cost of my current order
+// create a method adds the price of items clicked
 // As a user, I can see both the base total of my food selections and the total that includes sales tax
 // As a user, I can see the total that includes sales tax rounded to two decimals
 // As a user, I can see an image of my food selection on the menu
