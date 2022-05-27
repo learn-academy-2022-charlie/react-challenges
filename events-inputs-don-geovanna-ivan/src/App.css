@@ -1,0 +1,40 @@
+.container {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background: #734c3d;
+  color: white;
+   
+}
+
+.bots > div {
+  padding: 2rem;
+}
+
+.input {
+  width: 20rem;
+  height: 4rem;
+  
+}
+
+h3 {
+  font-variant: small-caps;
+  background-image: linear-gradient(to right,  #734c3d, maroon, #4d3534);
+  
+}
+
+#crazy:hover{
+ visibility: hidden;
+}
+
+#stup:hover{
+  color: yellow;
+}
+
+#nice:hover{
+  color: aquamarine;
+}
+
+footer:hover{
+  color: black;
+}
