@@ -1,0 +1,28 @@
+#diceroll {
+height: 500px;
+width: 400px;
+background-color:tan;
+float: left;
+margin-left: 40px;
+margin-top: 50px;
+text-align: center;
+}
+#trackdice {
+  height: 500px;
+  width: 400px;
+  background-color:blue;
+  float: right;
+  margin-right: 40px;
+  margin-top: 50px;
+
+}
+#diceBlock{
+  height:100px;
+  width:100px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  position: relative;
+  padding:50px;
+  background-color: white;
+}
