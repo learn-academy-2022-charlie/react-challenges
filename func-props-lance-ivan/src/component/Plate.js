@@ -10,7 +10,11 @@ class Plate extends Component {
                     <button onClick={ () => this.props.foodItems(value)}>
                         {value}
                        </button> 
-                    
+                       <br/>
+                       {this.props.itemPrice.map(value => {
+                         return value
+                       })}
+                  
 
                 </li>
             )

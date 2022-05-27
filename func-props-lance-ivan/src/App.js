@@ -8,6 +8,7 @@ import Plate from './component/Plate';
     super(props)
     this.state = {
       menu: ["fries", "chicken wings", "lager", "cheese sticks", "burger"],
+      price:[10, 30, 60, 200, 58],
       order: []
     }
   }
@@ -22,6 +23,7 @@ import Plate from './component/Plate';
       <>
       <h1>Menu</h1>
       <Plate itemOrdered= {this.state.menu}
+              itemPrice = {this.state.price}
       foodItems={this.foodItems}
       />
       <h3>Items Ordered</h3>
