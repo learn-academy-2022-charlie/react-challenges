@@ -5,6 +5,7 @@ class GoodRobot extends Component{
     return(
       <>
         <h1>GoodRobot</h1>
+        <p>Are you typing: {this.props.silverSurfer}?</p>
       </>
     )
   }

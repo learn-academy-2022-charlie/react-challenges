@@ -5,6 +5,7 @@ class KanyeBot5000 extends Component{
     return(
       <>
         <h1>KanyeBot5000</h1>
+        <p>{this.props.silverSurfer}</p>
       </>
     )
   }
