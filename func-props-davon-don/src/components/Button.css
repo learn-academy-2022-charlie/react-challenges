@@ -1,0 +1,8 @@
+button {
+    width:10rem;
+  }
+
+.list {
+  display: grid;
+  flex-flow: wrap;
+}
