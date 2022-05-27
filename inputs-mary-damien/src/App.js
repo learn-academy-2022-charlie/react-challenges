@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import BadRobot from "./components/BadRobot"
 import GoodRobot from "./components/GoodRobot"
+import PhoneticRobot from "./components/PhoneticRobot"
 
 class App extends Component {
   constructor(props){
@@ -25,6 +26,7 @@ this.setState({something: e.target.value})
       />
       <GoodRobot goodText = {this.state.something} />
       <BadRobot badText = {this.state.something}/>
+      <PhoneticRobot phoneText = {this.state.something}/>
       </>
     )
   }
