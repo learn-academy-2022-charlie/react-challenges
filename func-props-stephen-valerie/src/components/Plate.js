@@ -6,7 +6,7 @@ class Plate extends Component{
       <>
 
         <ul>{this.props.menu.map(value => {
-          return value
+          return (<li>{value}</li>)
         })}</ul>
       </>
     )

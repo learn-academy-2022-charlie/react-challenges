@@ -5,14 +5,14 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state={
-      // foodArr: ["Ribs", "Pizza", "Tacos", "Chicken"],
-      // price: [15.99, 9.99, 6.99, 11.99],
-      menu: [
-        {food: "Ribs", price:15.99},
-        {food: "Pizza", price:9.99},
-        {food: "Tacos", price:6.99},
-        {food: "Chicken", price:11.99},
-     ],
+      foodArr: ["Ribs", "Pizza", "Tacos", "Chicken"],
+      price: [15.99, 9.99, 6.99, 11.99],
+     //  menu: [
+     //    {food: "Ribs", price:15.99},
+     //    {food: "Pizza", price:9.99},
+     //    {food: "Tacos", price:6.99},
+     //    {food: "Chicken", price:11.99},
+     // ],
      //this.state.menu.food for a food item
      //this.state.menu.price for a price
 
@@ -27,7 +27,7 @@ class App extends Component{
         <h1>Welcome to foodHub</h1>
         <h2>Menu</h2>
         <Plate
-        menu={this.state.menu}/>
+        menu={this.state.foodArr}/>
 
       </>
     )
