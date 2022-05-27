@@ -4,7 +4,12 @@ class Plates extends Component{
   render(){
     return(
       <>
-        <h1>A Basic Class Component</h1>
+        <ul>
+            <li>
+              {this.props.foodItems}
+            </li>
+            {/* We tried making a bulleted list of the individual foodItems, but it broke. Right now it shows a single bullet with everything on it. */}
+        </ul>
       </>
     )
   }
